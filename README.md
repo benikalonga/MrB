@@ -1,4 +1,4 @@
 # MrB
 
 Just for a presentation
-![Mr Beni](img/logo.png)
+<img src="img/logo.png" width="128" alt="Mr Beni"/>
