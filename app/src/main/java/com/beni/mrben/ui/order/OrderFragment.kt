@@ -13,8 +13,6 @@ class OrderFragment : Fragment() {
 
     private var _binding: FragmentOrderBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -30,6 +28,7 @@ class OrderFragment : Fragment() {
         val textView: TextView = binding.textHome
         homeViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
+            println("OrderFragment: $it")
         }
         return root
     }
