@@ -1,4 +1,4 @@
 # MrB
 
 Just for a presentation
-<img src="img/logo.png" width="128" alt="Mr Beni"/>
+<img src="img/logo.png" widgth="100%" alt="Mr Beni"/>
