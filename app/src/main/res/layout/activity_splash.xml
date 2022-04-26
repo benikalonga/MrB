@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="loadingState"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/fullscreenContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="?attr/fullscreenBackgroundColor"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.MrBen.FullscreenContainer"
+        tools:context=".FullscreenActivity">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/len_128"
+            android:src="@raw/mrb_trans" />
+
+        <app.m4ntis.blinkingloader.BlinkingLoader
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:auto_start="true"
+            app:dot_blinkingColor="@color/white"
+            app:dot_margin="2dp"
+            app:dot_neutralColor="@color/white_alpha_48"
+            app:dot_num_dots="5" />
+    </LinearLayout>
+
+</layout>

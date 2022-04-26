@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mr Ben</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <!--Mr B-->
+    <string name="title_order">Order</string>
+    <string name="title_search">Search</string>
+    <string name="title_gifts">Gifts</string>
+    <string name="title_profile">Profile</string>
+</resources>
